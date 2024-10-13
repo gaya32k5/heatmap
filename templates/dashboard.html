@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Analysis Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Profile Analysis Dashboard</h1>
+    <form id="profileForm">
+        <input type="text" id="profileUrl" name="profile_url" placeholder="Paste Profile URL" required>
+        <button type="submit">Analyze</button>
+    </form>
+    
+    <div id="results" style="display:none;">
+        <h2>Profile Data:</h2>
+        <div id="bioSection">
+            <h3>Bio:</h3>
+            <p id="paragraphs"></p>
+        </div>
+        <div id="imageSection">
+            <h3>Images:</h3>
+            <ul id="deepfakeResults"></ul>
+        </div>
+    </div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
